@@ -1,0 +1,72 @@
+html {
+	color: white;
+	font-family: Arial;
+}
+
+body {
+	background-size: 84%;
+    background-attachment: fixed;
+	background-position:right top;
+}
+
+#content {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 5px auto;
+}
+
+header {
+	box-sizing: border-box;
+    color: white;
+    width: 100%;
+ }
+
+
+ #title {
+	 float:left;
+	 width:100%;
+	 background-color: red;
+}
+
+#photo {
+	box-sizing: border-box;
+	float:center;
+	width:100%;
+}
+
+#informations {
+	box-sizing: border-box;
+	text-align: left;
+	float:left;
+	width:100%;
+}
+
+#mon statut {
+	float: left;
+	clear:both;
+	width:100%;
+}
+
+#kl {
+	float:left;
+	clear:both;
+	width:50%;
+}
+
+#BBM {
+	float:left;
+	clear:both;
+	width:50%;
+}
+
+#Starboy {
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+#recompenses {
+	clear: both;
+    float: left;
+	margin-bottom: 0.5cm;
+}

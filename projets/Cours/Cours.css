@@ -1,0 +1,55 @@
+.loader{
+    background: url('ajax-loader (1).gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+    cursor: wait;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+    .loader h1{
+        background: none;
+        border: none;
+        color: #458976;
+        font-size: 22px;
+        font-family: "Open Sans",sans-serif;
+        font-variant: small-caps;
+        font-weight: 700;
+        height: 700px;
+        line-height: 700px;
+        margin: 0 0 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+body {
+	font-family: Arial;
+	background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+    }
+
+header {
+    float: center;
+    text-align: center;
+    size: 130%;
+    }
+
+#tableau {
+    float: center;
+    text-align: center;
+    size: 200%;
+    }
+
+#windows {
+    float: center;
+    text-align: center;
+    size: 100%;
+    }
+
+#mailto {
+    float: center;
+    text-align: center;
+    background-color: red
+    }

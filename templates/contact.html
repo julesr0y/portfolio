@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../styles/contact.css"/>
+    <script src="../scripts/jquery-3.6.0.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <link rel="icon" href="../images/logo.svg">
+    <meta name="viewport" content="width=device-witdh, initial-scale=1">
+    <title>Me contacter</title>
+  </head>
+  <header>
+    <img src="../images/logo.svg" id="Roy" onclick="window.location.href = '../templates/navigation.html';"><!--Logo en haut a gauche, retour à la page de navigation lors d'un clic dessus-->
+    <a href="javascript:history.back()" id="lien" style="color: white; text-decoration: none"><!--Lien en haut a droite seulement pour la version PC, retourne à la dernière page consultée-->
+      Revenir à la page précédente</a>
+  </header>
+  <body>
+    <div id="boutons"><!--Div qui contient les deux boutons de contact-->
+      <h1>Me contacter</h1>
+      <br>
+      <br>
+      <br>
+      <button class="bouton1" onclick="window.location.href = 'mailto:julesroydev@gmail.com';">
+        Via Email<!--Texte et lien pour contact par mail-->
+      </button>
+      <br><!--Espaces entre boutons-->
+      <br>
+      <br>
+      <br>
+      &nbsp;
+      <button id="bouton2" target="_blank" onclick="window.location.href = 'https://www.linkedin.com/in/jules-roy-759458230';">
+        Via Linkedin<!--Texte pour contact par linkedin-->
+      </button>
+      <br>
+      <br>
+      <a href="javascript:history.back()" id="lien2" style="color: white; text-decoration: none">
+      Revenir à la page précédente</a>
+      <!--Lien en bas seulement pour la version mobile, retourne à la dernière page consultée-->
+    </div>
+  </body>
+</html>

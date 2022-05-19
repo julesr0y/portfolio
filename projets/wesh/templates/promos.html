@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../static/CSS/styles_promos.css">
+        <link rel="stylesheet" href="../static/CSS/styles_home.css">
+        <link rel="icon" href="../static/IMG/logo.png"/>
+        <link href="../static/CSS/SliderCSS/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="../static/JS/SliderJS/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+        <script src="../static/JS/jquery-3.6.0.js"></script>
+        <script src="../static/JS/scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wesh</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a onclick="openNav()">
+                <div class="hamburger hamburger--spin" id="animationMenu">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+            <a class="login" href="login" target="_self"><i class="login-ico"></i> Se connecter</a>
+        </div>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li>{{ email }}<span>Connectez-vous pour plus ...</span></li>
+                <li><a href="/" target="_self">Accueil</a></li>
+                <li><a href="rechercher" target="_self">Rechercher...</a></li>
+            </ul>
+        </div>
+        <!--  suite code -->
+
+        <img src="../static/IMG/banderole.png" alt="Logo" id="logo">
+        <div class="cards-gallery">
+            {{html_produit}}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+html {
+    font-family: "WeshFont";
+}
+body {
+    background: linear-gradient(-45deg, #3c4de7, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 30s linear infinite;
+}
+br {
+    margin: 12px
+}
+#add:focus, #add:hover {
+    background-color: #196e98;
+}
+#add {
+    background-color: #25a3e1;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    order: 1;
+    padding: 0.75em 1.25em;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+#delete:focus, #delete:hover {
+    background-color: #a41919;
+}
+
+#delete {
+    background-color: #e12525;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    order: 1;
+    padding: 0.75em 1.25em;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+input, textarea, select {
+    appearance: none;
+    border: none;
+    font: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+input[type="text"], input[type="number"], input[type="url"], input[type=date], textarea, select {
+    border: 0.0625em solid #e5e5e5;
+    border-top-color: rgb(229, 229, 229);
+    border-top-style: solid;
+    border-top-width: 0.0625em;
+    padding: 1em 1.25em;
+    border-radius: 4px;
+}
+.infoTxt {
+    color: #484848;
+    background-color: #d5ebfd;
+    border-left: 6px solid #2196F3;
+    padding: 0px 0px 5px 0px;
+}
+.conteneurImgInHighlight {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    color: #484848;
+}
+.imgInHighLight {
+    width: 35px;
+    margin-right: 5px;
+}
+.listeChevron {
+    margin: 0px 0px 0px 0px;
+    line-height: 1.5;
+    list-style: url('https://img.icons8.com/ios-filled/10/000000/chevron-right.png');
+}
+.divInHighlight {
+    margin-top: -6px;
+}
+input {
+    margin: 5px 0px 5px 0px;
+}
+._body::before {
+    background-color: #fff;
+    content: '';
+    height: 0.5em;
+    left: 50%;
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    width: 0.5em;
+}
+._header {
+    background-color: #282830;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+._title {
+    font-size: 1rem;
+    margin: 0;
+}
+._body {
+    background-color: #fff;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 0.25em 0.25em;
+}
+option {
+    font-family: Arial;
+}
+
+.deco-btn:focus, .deco-btn:hover {
+    background-color: #a41919;
+}
+
+.deco-btn {
+    background-color: #e12525;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    order: 1;
+    padding: 0.75em 1.25em;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: block;
+    margin: 20px 10px 10px 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.alert-err {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+.alert-success {
+    padding: 20px;
+    background-color: #04aa6d;
+    color: white;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+.warnTxt {
+    color: #353535;
+    background-color: #ffc10740;
+    border-left: 6px solid #eeb302;
+    padding: 0px 0px 5px 0px;
+}

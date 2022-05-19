@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wesh</title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="../static/CSS/styles_home.css">
+        <!-- CSS -->
+        <link href="../static/CSS/styles_product.css" rel="stylesheet">
+        <meta name="robots" content="noindex,follow" />
+        <!-- JS -->
+        <script src="../static/JS/jquery-3.6.0.js"></script>
+        <script src="../static/JS/scripts.js"></script>
+        <script src="../static/JS/scripts_product.js" charset="utf-8"></script>
+        <link rel="icon" href="../static/IMG/logo.png" />
+        <title>Wesh</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a onclick="openNav()">
+                <div class="hamburger hamburger--spin" id="animationMenu">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+            <a class="login" href="login" target="_self"><i class="login-ico"></i> Se connecter</a>
+        </div>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li>{{ email }}<span>Connectez-vous pour plus ...</span></li>
+                <li><a href="/" target="_self">Accueil</a></li>
+                <li><a href="promos" target="_self">Promos</a></li>
+                <li><a href="rechercher" target="_self">Rechercher...</a></li>
+            </ul>
+        </div>
+        <!--  suite code -->
+    
+        <img src="../static/IMG/banderole.png" alt="Logo" id="logo">
+
+        <main class="container">
+            <!-- Left Column / Images -->
+            <div class="left-column">
+                <section class="gallery">
+                    <div class="carousel">
+                        <div class="thumbnails">
+                            <div class="slider"><div class="indicator"></div></div>
+                            {{images_produit_1}}
+                        </div>
+                        <div class="wrap">
+                            {{images_produit_2}}
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>{{type_produit}}</span>
+                    <h1>{{titre_produit}}</h1>
+                    <p>{{description_produit}}</p>
+                </div>
+
+                <!-- Product revew/buy -->
+                <div class="product-configuration">
+
+                    <!-- Product review -->
+                    <div class="product-color delivery-table-config" style="margin-bottom: 25px">
+                        <span class="product-in" style="margin-right: 5px"><strong>Avis :</strong></span>
+                        <div class="Stars" style="--rating: {{note_produit}}; " aria-label="bruh"></div>
+                        <span class="product-in" style="margin-left: 5px">{{note_produit}}/5</span>
+                    </div>
+
+                    <div class="delivery-table-config">
+                        <img src="../static/IMG/delivery.png" alt="bruh">
+                        <span style="padding-left: 5px"><strong>Frais de livraison : </strong>{{prix_livraison_produit}}</span>
+                    </div>
+                    <!-- Product Pricing -->
+                    <div class="product-price">
+                        <span>{{prix_produit}}</span>
+                        <div style="margin-right: 5px;">{{promo_prix_produit}}</div>
+                        <a href="#" class="cart-btn">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <table>
+            <tr>
+                <th>Titre</th>
+                <th>Description</th>
+            </tr>
+            {{caracteritiques_produit}}
+        </table>
+    </body>
+</html>
+<br>
+<!-- Site footer -->
+<footer class="footer">
+    <div class="footer__addr">
+        <a href="https://www.youtube.com/watch?v=kk0feCp_MZ4"><h1 class="footer__logo">he he boi</h1></a>
+        <h2>Contact</h2>
+        <address>
+            33 Rue du Presbytère, 47120 Monteton, France<br>
+            +33 6 00 00 00 00
+            <a class="footer__btn" href="mailto:plagiat.wish_100%surtoimemetusais@gmail.com">Nous contacter par mail</a>
+        </address>
+    </div>
+    <ul class="footer__nav">
+        <li class="nav__item">
+            <h2 class="nav__title">Remerciement spécial</h2>
+
+            <ul class="nav__ul">
+                <li>
+                    <a href="http://shorturl.at/buDG1">Yanis PEREZ, pour le nom du site</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Crédits</h2>
+
+            <ul class="nav__ul nav__ul--extra">
+                <li>
+                    <a href="#">Jules</a>
+                </li>
+                <li>
+                    <a href="#">Ilanie</a>
+                </li>
+                <li>
+                    <a href="#">Diego</a>
+                </li>
+                <li>
+                    <a href="#">Nicolas</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item">
+            <h2 class="nav__title">Légal</h2>
+            <ul class="nav__ul">
+                <li>
+                    <a href="#ilyenapas">Politique de confidentialité</a>
+                </li>
+                <li>
+                    <a href="#aquoiçasert">Termes d'utilisation</a>
+                </li>
+                <li>
+                    <a href="#onsenfout">Votre vie privée</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="legal">
+        <p>&copy; 2022 Wesh Inc. Tout droit réservé.</p>
+        <div class="legal__links">
+            <span>Tu as vraiment lu ça ?</span>
+        </div>
+    </div>
+</footer>

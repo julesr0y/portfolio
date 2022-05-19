@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../static/CSS/styles_home.css">
+    <link rel="icon" href="../static/IMG/logo.png" />
+    <link href="../static/CSS/SliderCSS/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="../static/JS/SliderJS/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="../static/JS/jquery-3.6.0.js"></script>
+    <script src="../static/JS/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wesh</title>
+</head>
+<body>
+    <div class="navbar">
+        <a onclick="openNav()">
+            <div class="hamburger hamburger--spin" id="animationMenu">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </a>
+        <a class="login" href="/login" target="_self"><i class="login-ico"></i> Se connecter</a>
+    </div>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li>{{ email }}<span>Connectez-vous pour plus ...</span></li>
+            <li><a href="promos" target="_self">Promos</a></li>
+            <li><a href="rechercher" target="_self">Rechercher...</a></li>
+        </ul>
+    </div>
+    <!--  suite code -->
+
+    <img src="../static/IMG/banderole.png" alt="Logo" id="logo">
+    <div id="form">
+        <a href="rechercher"><input style="background-repeat: no-repeat; background-image: url('../static/IMG/rechercher.png'); background-position: 7px 7px; margin-bottom: 0px;" id="searchtextbox" placeholder="Rechercher un produit..." class="txtSearch"></a>
+    </div>
+    <div id="recommandations">
+        <h1 class="txt-under-gallery">Les recommandations du jour</h1>
+        <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-visible slider-nav-dark slider-nav-autoplay slider-nav-autopause" data-slider-nav-autoplay-interval="4000" style="padding: 10px 65px 10px 65px;">
+            <ul class="slider-container py-4" id="slider2">
+                {{ html_recommendations }}
+                <!-- code here -->
+            </ul>
+
+            <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+        </div>
+    </div>
+    <div id="promos">
+        <h1 class="txt-under-gallery">Les offres à ne pas manquer</h1>
+        <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-visible slider-nav-dark slider-nav-autoplay slider-nav-autopause" data-slider-nav-autoplay-interval="4000" style="padding: 10px 65px 10px 65px;">
+            <ul class="slider-container py-4" id="slider2">
+                {{ html_promos }}
+                <!-- code here -->
+            </ul>
+
+            <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+        </div>
+    </div>
+    <div id="topventes">
+        <h1 class="txt-under-gallery">Les tendances</h1>
+        <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-visible slider-nav-dark slider-nav-autoplay slider-nav-autopause" data-slider-nav-autoplay-interval="4000" style="padding: 10px 65px 10px 65px;">
+            <ul class="slider-container py-4" id="slider2">
+                {{ html_topventes }}
+                <!-- code here -->
+            </ul>
+
+            <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Site footer -->
+<footer class="footer">
+    <div class="footer__addr">
+        <a href="https://www.youtube.com/watch?v=kk0feCp_MZ4"><h1 class="footer__logo">he he boi</h1></a>
+        <h2>Contact</h2>
+        <address>
+            33 Rue du Presbytère, 47120 Monteton, France<br>
+            +33 6 00 00 00 00
+            <a class="footer__btn" href="mailto:plagiat.wish_100%surtoimemetusais@gmail.com">Nous contacter par mail</a>
+        </address>
+    </div>
+    <ul class="footer__nav">
+        <li class="nav__item">
+            <h2 class="nav__title">Remerciement spécial</h2>
+
+            <ul class="nav__ul">
+                <li>
+                    <a href="http://shorturl.at/buDG1">Yanis PEREZ, pour le nom du site</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Crédits</h2>
+
+            <ul class="nav__ul nav__ul--extra">
+                <li>
+                    <a href="#">Jules</a>
+                </li>
+                <li>
+                    <a href="#">Ilanie</a>
+                </li>
+                <li>
+                    <a href="#">Diego</a>
+                </li>
+                <li>
+                    <a href="#">Nicolas</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item">
+            <h2 class="nav__title">Légal</h2>
+            <ul class="nav__ul">
+                <li>
+                    <a href="#ilyenapas">Politique de confidentialité</a>
+                </li>
+                <li>
+                    <a href="#aquoiçasert">Termes d'utilisation</a>
+                </li>
+                <li>
+                    <a href="#onsenfout">Votre vie privée</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="legal">
+        <p>&copy; 2022 Wesh Inc. Tout droit réservé.</p>
+        <div class="legal__links">
+            <span>Tu as vraiment lu ça ?</span>
+        </div>
+    </div>
+</footer>
