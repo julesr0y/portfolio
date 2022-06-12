@@ -5,7 +5,6 @@ import datetime
 from flask import *  # pip install flask
 import random as rd
 from datetime import timedelta
-
 from flask import sessions
 
 app = Flask(__name__)

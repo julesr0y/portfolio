@@ -1,0 +1,41 @@
+html
+{
+    background-color: rgb(30, 34, 39);
+    color: white;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1cm;
+}
+
+.haut-droite
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menucomplet
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#menu
+{
+    padding: 10vw;
+}
+
+.apparaitre
+{
+    display: none;
+}
+
+@media screen and (min-width:841px) and (max-width:950px) /* affichage pour tablettes */
+{
+
+}

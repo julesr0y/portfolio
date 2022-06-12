@@ -47,7 +47,7 @@ body
     margin-right: 0px;
 }
 
-#boutons /*section des 2 boutons*/
+.boutons /*section des 2 boutons*/
 {
     display: flex;
     flex-direction: column;
@@ -59,22 +59,7 @@ body
     transform: translate(-50%, -50%);
 }
 
-.bouton1 /*bouton de contact par mail*/
-{
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    background:white;
-    color:black;
-    font-family: 'verdana';
-    font-size: 20px;
-    border:white;
-    border-radius: 5px;
-    height: 10vh;
-    width: 25vw;
-}
-
-#bouton2 /*bouton de contact par linkedin*/
+.bouton /*bouton de contact par mail*/
 {
     align-items: center;
     display: flex;
@@ -107,7 +92,7 @@ body
         display: none;
     }
 
-    #boutons /*section des 2 boutons*/
+    .boutons /*section des 2 boutons*/
     {
     display: flex;
     flex-direction: column;
@@ -116,7 +101,7 @@ body
     position: absolute;
     }
     
-    .bouton1 /*bouton de contact par mail*/
+    .bouton /*bouton de contact par mail*/
     {
     align-items: center;
     display: flex;
@@ -126,19 +111,6 @@ body
     font-size: 20px;
     border:white;
     border-radius: 5px;
-    height: 10vh;
-    width: 70vw;
-    }
-    
-    #bouton2 /*bouton de contact par instagram*/
-    {
-    align-items: center;
-    display: flex;
-    background:white;
-    color:black;
-    font-family: 'verdana';
-    font-size: 20px;
-    border:white;
     height: 10vh;
     width: 70vw;
     }
