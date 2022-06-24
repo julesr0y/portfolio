@@ -7,35 +7,25 @@ html
 header
 {
     display: flex;
-    justify-content: space-between;
-    margin-right: 1cm;
-}
-
-.haut-droite
-{
-    display: flex;
     justify-content: space-evenly;
 }
-
-#menucomplet
+.body
 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 100;
+    display: flex;
+    justify-content: space-around;
 }
 
-#menu
+.droite
 {
-    padding: 10vw;
+    text-align: center;
 }
 
-.apparaitre
+.texte
 {
-    display: none;
+    font-size: 50px;
 }
 
-@media screen and (min-width:841px) and (max-width:950px) /* affichage pour tablettes */
+.acces
 {
-
+    font-size: 25px;
 }
