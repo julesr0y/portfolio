@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="img/logo_blanc.png" alt="Logo">
+
+    <div id="boutons">
+        <button value="Pierre" id="btn1">Pierre</button>
+        <button value="Feuille" id="btn2">Feuille</button>
+        <button value="Ciseaux" id="btn3">Ciseaux</button>
+    </div>
+
+    <br>
+
+    <div id="partie_joueurs">
+        <div id="score_joueur">
+            Vous:
+            <section id="tour_joueur"></section>
+            <section id="int_joueur">0</section>
+        </div>
+        <div id="tours">
+            Nb tours:
+            <section id="nb_tours">0</section>
+        </div>
+        <div id="score_ia">
+            IA:
+            <section id="tour_ia"></section>
+            <section id="int_ia">0</section>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="partie_resultat">
+        <section id="texte_resultat"></section>
+    </div>
+
+</body>
+<footer>
+    Pour relancer une partie, réactualisez la page    
+    <br>
+    <a href="https://julesroy.alwaysdata.net" target="_blank">ROY Jules, Inc.</a>
+</footer>
+<script src="script_jeu.js"></script>
+</html>
