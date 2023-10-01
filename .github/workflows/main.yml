@@ -9,8 +9,8 @@ jobs:
         with:
           fetch-depth: 2
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          ftp-server: ftp-julesroy.alwaysdata.net
-          ftp-username: julesroy
-          ftp-password: Jr040104#
+          server: ftp-julesroy.alwaysdata.net
+          username: julesroy
+          password: Jr040104#
