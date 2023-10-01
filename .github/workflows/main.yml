@@ -17,4 +17,5 @@ jobs:
           server: ftp-julesroy.alwaysdata.net
           username: julesroy
           password: Jr040104#
-          local-dir: www/
+          local-dir: ./
+          remote: www/
