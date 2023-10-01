@@ -18,4 +18,4 @@ jobs:
           username: julesroy
           password: Jr040104#
           local-dir: ./
-          remote: www/
+          server-dir: www/
