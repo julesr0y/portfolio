@@ -1,0 +1,18 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'CabinetGrotesk';
+    src: url('../fonts/CabinetGrotesk-Variable.ttf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Variable.ttf');
+}
+
+@font-face {
+    font-family: 'SatoshiItalic';
+    src: url('../fonts/Satoshi-VariableItalic.ttf');
+}
