@@ -20,21 +20,6 @@
             color: #e63946;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const cards = document.querySelectorAll(".card");
-            cards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.style.transform = "translateY(0)";
-                    card.style.opacity = "1";
-                }, 300 * index);
-            });
-
-            const countriesCard = document.querySelector(".card.bg-red-600");
-            const footerCard = document.querySelector(".card.bg-black");
-            footerCard.style.height = `${countriesCard.offsetHeight}px`;
-        });
-    </script>
 </head>
 
 <body class="text-white bg-main-color font-Satoshi">
@@ -242,6 +227,21 @@
 
     // Initialisation de l'horloge immédiatement
     updateClock();
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.style.transform = "translateY(0)";
+                card.style.opacity = "1";
+            }, 300 * index);
+        });
+
+        const countriesCard = document.querySelector(".card.bg-red-600");
+        const footerCard = document.querySelector(".card.bg-black");
+        footerCard.style.height = `${countriesCard.offsetHeight}px`;
+    });
 </script>
 
 </html>

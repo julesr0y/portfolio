@@ -1,8 +1,8 @@
 {
     "watch": [
-        "public/**/*.html",
+        "views/**/*.ejs",
         "public/**/*.js"
     ],
     "ext": "html js",
-    "exec": "npm run build:css && node server-local.js"
+    "exec": "npm run build:css && node app.js"
 }

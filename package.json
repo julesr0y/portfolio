@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "netlify-lambda build express",
-    "start": "node server-local.js",
+    "start": "node app.js",
     "dev": "nodemon",
     "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
   },
@@ -15,8 +14,7 @@
     "autoprefixer": "^10.4.19",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "netlify-cli": "^17.33.0",
-    "netlify-lambda": "^2.0.16",
+    "helmet": "^7.1.0",
     "nodemon": "^3.1.4",
     "postcss": "^8.4.39",
     "postcss-cli": "^11.0.0",
