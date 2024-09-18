@@ -1,21 +1,26 @@
+name: SSH Deployment
+
 on:
   push:
     branches:
-      - prod
-name: Publish
+      - main
+
 jobs:
-  FTP-Deploy-Action:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.1.0
-        with:
-          fetch-depth: 2
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
-        with:
-          server: ftp-julesroy.alwaysdata.net
-          username: julesroy
-          password: Jr040104#
-          local-dir: ./
-          server-dir: www/
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Execute SSH commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          cd www/portfolio
+          git reset --hard
+          git pull
+          npm install

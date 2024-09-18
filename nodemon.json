@@ -1,0 +1,8 @@
+{
+    "watch": [
+        "views/**/*.ejs",
+        "public/**/*.js"
+    ],
+    "ext": "html js",
+    "exec": "npm run build:css && node app.js"
+}
