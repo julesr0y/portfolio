@@ -21,6 +21,7 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         script: |
           cd www/portfolio
-          git reset --hard
+          git fetch --all
+          git reset --hard origin/main
           git pull
-          npm install
+          npm install --omit=dev
