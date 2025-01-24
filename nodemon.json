@@ -3,6 +3,6 @@
         "views/**/*.ejs",
         "public/**/*.js"
     ],
-    "ext": "html js",
+    "ext": "ejs js",
     "exec": "npm run build:css && node app.js"
 }

@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon",
-    "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
+    "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css",
+    "format:views": "prettier --write ./views/**/*.ejs"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,9 @@
     "postcss-cli": "^11.0.0",
     "serverless-http": "^3.2.0",
     "tailwindcss": "^3.4.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "prettier-plugin-ejs": "^1.0.3"
   }
 }
