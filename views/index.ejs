@@ -24,7 +24,7 @@
         </style>
     </head>
 
-    <body class="text-white bg-main-color font-Satoshi">
+    <body class="text-white bg-main-color font-Satoshi flex justify-center items-center min-h-screen">
         <div class="max-w-6xl mx-auto p-3 grid gap-4 md:grid-cols-2 lg:h-screen lg:grid-rows-8 lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]">
             <!-- IntroCard Component -->
             <div class="card bg-second-color p-3 rounded-lg lg:col-span-3 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
@@ -36,7 +36,7 @@
                             <p>"I create things"</p>
                         </div>
                         <div class="flex gap-4">
-                            <a href="https://github.com/julesr0y" aria-label="github profile" target="_blank">
+                            <a href="https://github.com/julesr0y/" aria-label="github profile" target="_blank">
                                 <button class="custom-btn text-xl max-h-[50px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-5 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg">
                                     <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 fill-white" data-icon="ri:github-fill">
                                         <symbol id="ai:ri:github-fill">
@@ -71,6 +71,12 @@
                                     <span class="sr-only">Instagram Profile</span>
                                 </button>
                             </a>
+                            <a href="https://app.juwa.co/public/profil/7895047b-4c06-4afc-ba66-d48324761081" aria-label="juwa profile" target="_blank">
+                                <button class="custom-btn text-xl max-h-[50px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-5 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg">
+                                    <img src="/juwa.svg" alt="JUWA profile" class="h-6 w-auto" />
+                                    <span class="sr-only">JUWA Profile</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +87,7 @@
                 <h2 class="text-lg font-bold m-0 z-20">About me</h2>
                 <div class="flex flex-col gap-2">
                     <span class="text-sm font-light">
-                        I'm Jules, an IT engineering student from France.
+                        I'm Jules, an IT engineering student and freelance web developper from France.
                         <br />
                         My expertise lies in:
                         <ul class="list-disc list-inside">
@@ -91,6 +97,7 @@
                             <li>PHP</li>
                             <li>MySQL</li>
                             <li>Node.js</li>
+                            <li>Laravel</li>
                             <li>HTML/CSS</li>
                         </ul>
                     </span>
@@ -126,10 +133,11 @@
                 <time datetime="" id="timeDisplay" class="text-2xl xl:text-5xl xl:whitespace-nowrap w-50 xl:w-100 h-[calc(100%-28px)] font-serif flex justify-center items-center"> </time>
             </div>
 
-            <!-- Card for My work - Soon -->
-            <div class="card bg-second-color text-white p-3 rounded-lg relative lg:col-span-1 lg:row-span-2 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
-                <h2 class="text-2xl">My work - Soon</h2>
-            </div>
+            <!-- Card for Bento.me profile -->
+            <a href="https://bento.me/julesr0y" target="_blank" class="card bg-second-color text-white p-3 rounded-lg relative lg:col-span-1 lg:row-span-2 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
+                <img src="/bento.svg" alt="Bento.me" class="h-28 lg:h-2/3 w-auto flex justify-center items-center mx-auto"/>
+                <p class="text-center">See my projects on my bento.me profile</p>
+            </a>
 
             <!-- Now Component -->
             <div class="card bg-second-color p-3 rounded-lg lg:col-span-1 lg:row-span-2 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
