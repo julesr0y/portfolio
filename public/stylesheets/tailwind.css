@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+
+@config '../../tailwind.config.js';
 
 @font-face {
     font-family: 'CabinetGrotesk';
@@ -15,4 +15,16 @@
 @font-face {
     font-family: 'SatoshiItalic';
     src: url('../fonts/Satoshi-VariableItalic.ttf');
+}
+
+@theme {
+    --font-satoshi: 'Satoshi', sans-serif;
+}
+
+@theme {
+    --font-satoshi-italic: 'SatoshiItalic', sans-serif;
+}
+
+@theme {
+    --font-cabinet-grotesk: 'CabinetGrotesk', sans-serif;
 }
