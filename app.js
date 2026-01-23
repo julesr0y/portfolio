@@ -13,9 +13,12 @@ app.use(helmet.contentSecurityPolicy({
         defaultSrc: ["'self'"],
         connectSrc: ["'self'"],
         styleSrc: ["'self'", "'unsafe-inline'"],
-        scriptSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "https://www.google.com", "https://maps.googleapis.com"],
         scriptSrcAttr: ["'unsafe-inline'"],
-        mediaSrc: ["'self'"]
+        mediaSrc: ["'self'"],
+        imgSrc: ["'self'", "data:", "https://maps.gstatic.com", "https://maps.googleapis.com", "https://www.google.com"],
+        frameSrc: ["'self'", "https://www.google.com", "https://www.google.fr", "https://maps.google.com"],
+        childSrc: ["'self'", "https://www.google.com", "https://www.google.fr", "https://maps.google.com"],
     }
 })); // Middleware permettant de configurer la Content Security Policy (CSP) avec Helmet
 
