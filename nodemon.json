@@ -4,5 +4,5 @@
         "public/**/*.js"
     ],
     "ext": "ejs js",
-    "exec": "npm run build:css && node app.js"
+    "exec": "npm run build:css && node ./bin/www"
 }

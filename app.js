@@ -32,10 +32,4 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!');
 });
 
-const port = 3000;
-const server = http.createServer(app);
-server.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
-
 module.exports = app;

@@ -12,16 +12,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "autoprefixer": "^10.4.21",
-    "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "helmet": "^8.1.0",
-    "nodemon": "^3.1.10",
-    "serverless-http": "^3.2.0",
-    "tailwindcss": "^4.1.10"
+    "autoprefixer": "^10.5.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "helmet": "^8.2.0",
+    "nodemon": "^3.1.14",
+    "serverless-http": "^4.0.0",
+    "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
+    "prettier": "^3.9.5",
     "prettier-plugin-ejs": "^1.0.3"
   }
 }
