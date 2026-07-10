@@ -1,0 +1,21 @@
+# Jules ROY - IT Student & Web Developer
+
+Jules ROY is an IT engineering student at JUNIA ISEN Lille and a freelance web developer based in France.
+
+## Profile Details
+- **Email**: julesroydev@gmail.com
+- **GitHub**: https://github.com/julesr0y
+- **LinkedIn**: https://www.linkedin.com/in/julesr0y/
+- **Instagram**: https://instagram.com/julesr0y/
+- **Linktree**: https://linktr.ee/julesr0y
+
+## Skills
+- Languages: C/C++, Java, Python, SageMath, JavaScript, PHP, HTML/CSS
+- Frameworks & Libraries: Node.js, Laravel, TailwindCSS, Express, SFML
+- Database: MySQL
+- Spoken Languages: French (Native), English (Fluent)
+
+## Education & Experience
+- Currently enrolled in the CIR program at JUNIA ISEN Lille, France.
+- Freelance Web Developer.
+- Actively seeking a 3-month internship abroad starting in May 2027.
