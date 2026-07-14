@@ -16,11 +16,11 @@ app.use(helmet.contentSecurityPolicy({
         scriptSrc: ["'self'", "'unsafe-inline'", "https://www.google.com", "https://maps.googleapis.com", "https://cdnjs.cloudflare.com"],
         scriptSrcAttr: ["'unsafe-inline'"],
         mediaSrc: ["'self'"],
-        imgSrc: ["'self'", "data:", "https://maps.gstatic.com", "https://maps.googleapis.com", "https://www.google.com", "https://media.licdn.com"],
+        imgSrc: ["'self'", "data:", "https://maps.gstatic.com", "https://maps.googleapis.com", "https://www.google.com"],
         frameSrc: ["'self'", "https://www.google.com", "https://www.google.fr", "https://maps.google.com"],
         childSrc: ["'self'", "https://www.google.com", "https://www.google.fr", "https://maps.google.com"],
     }
-})); // Middleware permettant de configurer la Content Security Policy (CSP) avec Helmet
+})); // Middleware for Content Security Policy (CSP)
 
 // Home route.
 app.get('/', (req, res) => {
