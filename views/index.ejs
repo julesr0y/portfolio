@@ -1,279 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+        <title>Jules ROY</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta name="description"
-        content="Portfolio of Jules ROY, IT engineering student at JUNIA ISEN Lille. Discover my profesionnal skills and projects." />
-    <meta name="keywords" content="julesr0y, Jules ROY, portfolio, web developer, student, IT engineer" />
-    <meta name="author" content="julesr0y" />
-
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://julesr0y.xyz/" />
-    <meta property="og:title" content="Jules ROY" />
-    <meta property="og:description"
-        content="Explore the portfolio of Jules ROY, engineering student. View skills, experience, and projects." />
-    <meta property="og:image" content="https://julesr0y.xyz/icons/open-graph-icon-1200x630.png" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://julesr0y.xyz/" />
-    <meta name="twitter:title" content="Jules ROY" />
-    <meta name="twitter:description"
-        content="Explore the portfolio of Jules ROY, engineering student. View skills, experience, and projects." />
-    <meta name="twitter:image" content="https://julesr0y.xyz/icons/twitter-icon-800x418.png" />
-
-    <link rel="canonical" href="https://julesr0y.xyz/" />
-    <link rel="icon" href="/favicon.ico?v=M44lzPylqQ" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>Jules ROY</title>
-    <style>
-        .card {
-            transition:
-                transform 0.4s,
-                opacity 0.4s;
-            transform: translateY(40%);
-            opacity: 0;
-        }
-
-        .shadow-custom {
-            box-shadow: 2px 2px 0;
-            color: #e63946;
-        }
-    </style>
-</head>
-
-<body class="text-white bg-main-color font-Satoshi flex justify-center items-center min-h-screen">
-    <div
-        class="max-w-6xl mx-auto p-3 grid gap-4 md:grid-cols-2 lg:h-screen lg:grid-rows-8 lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]">
-        <div id="intro-card"
-            class="card relative overflow-hidden bg-second-color p-3 rounded-lg lg:col-span-3 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
-            <div class="flex w-full h-full relative z-10">
-                <div class="flex flex-col justify-between gap-4">
-                    <div class="flex flex-col backdrop-blur-xs rounded-xl p-2">
-                        <p class="m-0 font-light text-xl">Hi, I'm <b class="font-bold">Jules</b>, an IT Engineering
-                            Student.</p>
-                        <p>Lille, FRANCE</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Component -->
-        <div
-            class="card bg-second-color p-3 rounded-lg lg:col-span-1 lg:row-span-6 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
-            <div class="h-full">
-                <header class="flex items-center pb-2">
-                    <h1 class="text-white text-xl font-bold">Contact Me</h1>
-                </header>
-
-                <!-- Custom LinkedIn Card -->
-                <div
-                    class="flex flex-col items-center bg-second-color border border-border-color rounded-xl p-4 my-3 w-full relative overflow-hidden transition-all duration-300 group">
-
-                    <!-- Avatar section -->
-                    <div class="relative w-14 h-14 mb-2 mt-1">
-                        <!-- Profile pic -->
-                        <img class="w-full h-full rounded-full bg-[#0077b5]/10 border border-[#0077b5]/30 flex items-center justify-center text-white font-bold text-lg select-none group-hover:scale-105 transition-transform duration-300"
-                            src="https://media.licdn.com/dms/image/v2/D4E03AQGLKkLh8HciZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722931669285?e=1785369600&v=beta&t=VkJ4sYcyOfOyZVxyJWDdPvHvXJiKH5wXmZytAY2C3bo"
-                            alt="JR">
-                        <!-- Small LinkedIn logo overlay -->
-                        <div
-                            class="absolute bottom-0 right-0 bg-[#0077b5] rounded p-0.5 text-white flex items-center justify-center">
-                            <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg>
+    <body class="text-white bg-main-color font-Satoshi flex justify-center items-center min-h-screen">
+        <!-- Main Grid -->
+        <div class="max-w-6xl mx-auto p-3 grid gap-4 md:grid-cols-2 lg:h-screen lg:grid-rows-8 lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]">
+            <!-- Intro -->
+            <div id="intro-card" class="card relative overflow-hidden bg-second-color p-3 rounded-lg lg:col-span-3 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
+                <div class="flex w-full h-full relative z-10">
+                    <div class="flex flex-col justify-between gap-4">
+                        <div class="flex flex-col backdrop-blur-xs rounded-xl p-2">
+                            <p class="m-0 font-light text-xl">Hi, I'm <b class="font-bold">Jules</b>, an IT Engineering Student.</p>
+                            <p>Lille, FRANCE</p>
                         </div>
                     </div>
-
-                    <!-- Text Info -->
-                    <h2 class="text-white font-bold text-base leading-tight">Jules ROY</h2>
-                    <p class="text-gray-400 text-xs text-center mt-1 leading-snug">IT Engineering Student</p>
-                    <p class="text-gray-500 text-[10px] mt-0.5">JUNIA ISEN Lille · Lille, France</p>
-
-                    <!-- CTA Button -->
-                    <a href="https://www.linkedin.com/in/julesr0y" target="_blank"
-                        class="mt-3.5 w-full py-1.5 px-4 bg-third-color hover:bg-third-color/90 text-white text-xs font-semibold rounded-full text-center transition-colors duration-150 ease-in-out">
-                        View profile
-                    </a>
                 </div>
+            </div>
 
-                <address class="flex flex-col pt-2">
-                    <h2 class="text-gray-500">Contact Details</h2>
-                    <p>julesroydev@gmail.com</p>
-                </address>
+            <!-- Contact -->
+            <div class="card bg-second-color p-3 rounded-lg lg:col-span-1 lg:row-span-6 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
+                <div class="h-full">
+                    <header class="flex items-center pb-2">
+                        <h1 class="text-white text-xl font-bold">Contact</h1>
+                    </header>
 
-                <div class="flex flex-col w-fit pt-2">
-                    <h2 class="text-gray-500">Socials</h2>
-                    <div class="flex gap-4">
-                        <a href="https://github.com/julesr0y/" aria-label="github profile" target="_blank">
-                            <button
-                                class="custom-btn text-xl max-h-[50px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-5 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 fill-white"
-                                    data-icon="ri:github-fill">
-                                    <symbol id="ai:ri:github-fill">
-                                        <path
-                                            d="M12.001 2c-5.525 0-10 4.475-10 10a9.994 9.994 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.28 9.28 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10">
-                                        </path>
-                                    </symbol>
-                                    <use xlink:href="#ai:ri:github-fill"></use>
+                    <!-- LinkedIn Card -->
+                    <div class="flex flex-col items-center bg-second-color border border-border-color rounded-xl p-4 my-3 w-full relative overflow-hidden transition-all duration-300 group">
+                        <!-- Avatar section -->
+                        <div class="relative w-14 h-14 mb-2 mt-1">
+                            <!-- Profile pic -->
+                            <img class="w-full h-full rounded-full bg-[#0077b5]/10 border border-[#0077b5]/30 flex items-center justify-center text-white font-bold text-lg select-none group-hover:scale-105 transition-transform duration-300" src="https://media.licdn.com/dms/image/v2/D4E03AQGLKkLh8HciZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722931669285?e=1785369600&v=beta&t=VkJ4sYcyOfOyZVxyJWDdPvHvXJiKH5wXmZytAY2C3bo" alt="JR" />
+                            <!-- Small LinkedIn logo overlay -->
+                            <div class="absolute bottom-0 right-0 bg-[#0077b5] rounded p-0.5 text-white flex items-center justify-center">
+                                <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                 </svg>
-                                <span class="sr-only">GitHub Profile</span>
-                            </button>
-                        </a>
-                        <a href="https://instagram.com/julesr0y/" aria-label="instagram profile" target="_blank">
-                            <button
-                                class="custom-btn text-xl max-h-[50px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-5 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 fill-white"
-                                    data-icon="ri:instagram-fill">
-                                    <symbol id="ai:ri:instagram-fill">
-                                        <path
-                                            d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5">
-                                        </path>
-                                    </symbol>
-                                    <use xlink:href="#ai:ri:instagram-fill"></use>
-                                </svg>
-                                <span class="sr-only">Instagram Profile</span>
-                            </button>
-                        </a>
+                            </div>
+                        </div>
+
+                        <h2 class="text-white font-bold text-base leading-tight">Jules ROY</h2>
+                        <p class="text-gray-400 text-xs text-center mt-1 leading-snug">IT Engineering Student</p>
+                        <p class="text-gray-500 text-[10px] mt-0.5">JUNIA ISEN Lille · Lille, France</p>
+
+                        <a href="https://www.linkedin.com/in/julesr0y" target="_blank" class="mt-3.5 w-full py-1.5 px-4 bg-third-color hover:bg-third-color/90 text-white text-xs font-semibold rounded-full text-center transition-colors duration-150 ease-in-out"> View profile </a>
+                    </div>
+
+                    <div class="flex flex-col pt-2">
+                        <h2 class="text-gray-500">Email</h2>
+                        <a href="mailto:julesroydev@gmail.com">julesroydev@gmail.com</a>
+                    </div>
+
+                    <div class="flex flex-col w-fit pt-2">
+                        <h2 class="text-gray-500">Socials</h2>
+                        <div class="flex gap-4 pt-2">
+                            <a href="https://github.com/julesr0y/" aria-label="github profile" target="_blank">
+                                <button class="custom-btn text-xl max-h-[50px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-5 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg">
+                                    <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 fill-white" data-icon="ri:github-fill">
+                                        <symbol id="ai:ri:github-fill">
+                                            <path d="M12.001 2c-5.525 0-10 4.475-10 10a9.994 9.994 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.28 9.28 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10"></path>
+                                        </symbol>
+                                        <use xlink:href="#ai:ri:github-fill"></use>
+                                    </svg>
+                                    <span class="sr-only">GitHub Profile</span>
+                                </button>
+                            </a>
+                            <a href="https://instagram.com/julesr0y/" aria-label="instagram profile" target="_blank">
+                                <button class="custom-btn text-xl max-h-[50px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-5 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg">
+                                    <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6 fill-white" data-icon="ri:instagram-fill">
+                                        <symbol id="ai:ri:instagram-fill">
+                                            <path
+                                                d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5"
+                                            ></path>
+                                        </symbol>
+                                        <use xlink:href="#ai:ri:instagram-fill"></use>
+                                    </svg>
+                                    <span class="sr-only">Instagram Profile</span>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- About Me Component -->
-        <div
-            class="card bg-second-color p-3 rounded-lg lg:row-span-4 lg:col-span-1 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
-            <h2 class="text-lg font-bold m-0 z-20">About me</h2>
-            <div class="flex flex-col gap-2">
-                <span class="text-sm font-light">
-                    My expertise lies in:
-                    <ul class="list-disc list-inside">
-                        <li>C / C++</li>
-                        <li>Java</li>
-                        <li>Python / SageMath</li>
-                        <li>JavaScript / Node.js</li>
-                        <li>PHP / Laravel</li>
-                        <li>MySQL</li>
-                        <li>HTML / CSS / TailwindCSS</li>
-                    </ul>
-                </span>
-                <p class="text-sm font-light">Through hands-on projects and dedicated learning, I've gained a solid
-                    grasp of these technologies. I'm excited to continue expanding my knowledge and contributing to
-                    innovative solutions in the field of development / cybersecurity.</p>
-            </div>
-        </div>
-
-        <!-- Card for Projects -->
-        <a href="/projects"
-            class="card bg-second-color text-white p-3 rounded-lg relative lg:col-span-1 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between group">
-            <div class="flex justify-between w-full items-start">
-                <span class="text-xs text-gray-500 font-light">Portfolio</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="h-6 w-6 text-gray-500 group-hover:text-third-color transition-colors duration-100">
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                </svg>
-            </div>
-            <div class="flex flex-col gap-1 mt-2">
-                <h2 class="text-lg font-bold group-hover:text-third-color transition-colors duration-100">Projects
-                </h2>
-                <p class="text-xs text-gray-500 font-light">Explore my work, creations and open-source
-                    contributions.
-                </p>
-            </div>
-            <div
-                class="flex items-center justify-between text-xs mt-3 pt-2 border-t border-border-color/30 text-third-color font-medium group-hover:translate-x-1 transition-transform duration-150">
-                <span>View Projects</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </div>
-        </a>
-
-        <!-- Now Component -->
-        <div
-            class="card bg-second-color p-3 rounded-lg lg:col-span-1 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
-            <div class="flex justify-between w-full items-start mb-2">
-                <div class="flex flex-col">
-                    <h2 class="text-lg">Now</h2>
+            <!-- About Me -->
+            <div class="card bg-second-color p-3 rounded-lg lg:row-span-4 lg:col-span-1 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
+                <h2 class="text-lg font-bold m-0 z-20">About me</h2>
+                <div class="flex flex-col gap-2">
+                    <span class="text-sm font-light">
+                        My expertise lies in:
+                        <ul class="list-disc list-inside">
+                            <li>C / C++ / CMake</li>
+                            <li>Java</li>
+                            <li>Python / SageMath</li>
+                            <li>JavaScript / Node.js</li>
+                            <li>PHP / Laravel / MySQL</li>
+                            <li>HTML / CSS / TailwindCSS</li>
+                            <li>Linux / Bash</li>
+                            <li>Git / GitHub Actions / Docker</li>
+                        </ul>
+                    </span>
+                    <p class="text-sm font-light">Through hands-on projects and dedicated learning, I've gained a solid grasp of these technologies. I'm excited to continue expanding my knowledge and contributing to innovative solutions in the field of development / cybersecurity.</p>
                 </div>
-                <span class="relative flex h-3 w-3">
-                    <span
-                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-third-color opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-third-color"></span>
+            </div>
+
+            <!-- Projects -->
+            <a href="/projects" class="card bg-second-color text-white p-3 rounded-lg relative lg:col-span-1 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between group">
+                <div class="flex flex-col gap-1 mt-2">
+                    <h2 class="text-lg font-bold group-hover:text-third-color transition-colors duration-100">Projects</h2>
+                    <p class="text-xs">Explore my work, creations and open-source contributions.</p>
+                </div>
+                <div class="flex items-center justify-between text-xs mt-3 pt-2 border-t border-border-color/30 text-third-color font-medium group-hover:translate-x-1 transition-transform duration-150">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Now -->
+            <div class="card bg-second-color p-3 rounded-lg lg:col-span-1 lg:row-span-4 border border-border-color hover:border-third-color transition duration-75 ease-in-out">
+                <div class="flex justify-between w-full items-start mb-2">
+                    <div class="flex flex-col">
+                        <h2 class="text-lg font-bold group-hover:text-third-color transition-colors duration-100">Now</h2>
+                    </div>
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-third-color opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-third-color"></span>
+                    </span>
+                </div>
+                <p class="text-xs">
+                    Currently enrolled in the CIR program at <a href="https://www.junia.com/fr/formations-admissions/prepa-classes-preparatoires-ingenieur/prepa-informatique-reseaux/" target="_blank"><b class="font-bold">JUNIA ISEN Lille</b>.</a>
+                </p>
+
+                <p class="text-xs pt-2">Actively seeking a 3-month internship abroad starting in May 2027.</p>
+            </div>
+
+            <div class="lg:col-span-1 lg:row-span-2 h-full flex flex-col gap-3">
+                <!-- Languages -->
+                <span class="card bg-second-color rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex items-center flex-1 p-3">
+                    <span class="flex items-center gap-2">
+                        <p>Spoken languages:</p>
+                        <img src="/images/france.svg" alt="French" class="h-6 w-auto" />
+                        <img src="/images/united-kingdom.svg" alt="English" class="h-6 w-auto" />
+                    </span>
+                </span>
+                <span class="card bg-second-color rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex items-center flex-1 p-3">
+                    <p class="text-xs">© 2021 - <%= new Date().getFullYear(); %> · Jules ROY</p>
                 </span>
             </div>
-            <p class="text-xs">
-                Currently enrolled in the CIR program at <a
-                    href="https://www.junia.com/fr/formations-admissions/prepa-classes-preparatoires-ingenieur/prepa-informatique-reseaux/"
-                    target="_blank"><b class="font-bold">JUNIA ISEN Lille</b>.</a>
-            </p>
-
-            <p class="text-xs pt-2">Actively seeking a 3-month internship abroad starting in May 2027.</p>
         </div>
-
-        <div class="lg:col-span-1 lg:row-span-2 h-full flex flex-col gap-3">
-            <!-- Card for Spoken Languages -->
-            <span
-                class="card bg-second-color rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex items-center flex-1 p-3">
-                <span class="flex items-center gap-2">
-                    <p>Spoken languages:</p>
-                    <img src="/france.svg" alt="French" class="h-6 w-auto" />
-                    <img src="/united-kingdom.svg" alt="English" class="h-6 w-auto" />
-                </span>
-            </span>
-            <span
-                class="card bg-second-color rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex items-center flex-1 p-3">
-                <p class="text-xs">© 2021 - <%= new Date().getFullYear(); %> · Jules ROY</p>
-            </span>
-        </div>
-    </div>
-
-    <!-- Script d'animation des cartes -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.style.transform = 'translateY(0)';
-                    card.style.opacity = '1';
-                }, 300 * index);
-            });
-        });
-    </script>
-
-    <!-- Three.js and Vanta.js (Net Effect) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            VANTA.NET({
-                el: "#intro-card",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                color: "#e63946",
-                backgroundColor: "#171717",
-                points: 20.00
-            });
-        });
-    </script>
-
-</body>
-
-<!-- Aucun script supplémentaire requis -->
-
+        <script src="/js/scripts.js"></script>
+    </body>
 </html>
-<!-- trigger-restart -->

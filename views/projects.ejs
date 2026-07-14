@@ -1,293 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+        <title>Projects · Jules ROY</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="Projects built by Jules ROY, engineering student." />
-    <meta name="keywords" content="julesr0y, Jules ROY, portfolio, projects, web developer, student, IT engineer" />
-    <meta name="author" content="julesr0y" />
-
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://julesr0y.xyz/projects" />
-    <meta property="og:title" content="Projects - Jules ROY" />
-    <meta property="og:description" content="Explore projects built by Jules ROY, engineering student." />
-    <meta property="og:image" content="https://julesr0y.xyz/icons/open-graph-icon-1200x630.png" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://julesr0y.xyz/projects" />
-    <meta name="twitter:title" content="Projects - Jules ROY" />
-    <meta name="twitter:description" content="Explore projects built by Jules ROY, engineering student." />
-    <meta name="twitter:image" content="https://julesr0y.xyz/icons/twitter-icon-800x418.png" />
-
-    <link rel="canonical" href="https://julesr0y.xyz/projects" />
-    <link rel="icon" href="/favicon.ico?v=M44lzPylqQ" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>Projects · Jules ROY</title>
-    <style>
-        .card {
-            transition:
-                transform 0.4s,
-                opacity 0.4s;
-            transform: translateY(20%);
-            opacity: 0;
-        }
-
-        .shadow-custom {
-            box-shadow: 2px 2px 0;
-            color: #e63946;
-        }
-    </style>
-</head>
-
-<body class="text-white bg-main-color font-Satoshi min-h-screen py-10 px-4 flex justify-center">
-    <div class="max-w-6xl w-full">
-        <div>
-            <!-- Header Component -->
-            <header
-                class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-10 pb-6 border-b border-border-color">
-                <div class="flex items-center gap-4">
-                    <a href="/" aria-label="Back to home">
-                        <button
-                            class="custom-btn text-sm max-h-[40px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-4 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg flex items-center gap-2">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                            <span>Back to Home</span>
-                        </button>
-                    </a>
-                </div>
-                <div>
-                    <h1 class="text-3xl font-bold font-CabinetGrotesk tracking-tight text-white">Projects</h1>
-                    <p class="text-sm font-light text-gray-500 mt-1">A selection of my recent works and experiments</p>
-                </div>
-            </header>
-
-            <!-- Grid Component -->
-            <main class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <!-- Project 1 -->
-                <article
-                    class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold">Sentinelle Guard</h2>
-                            <span
-                                class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Security</span>
-                        </div>
-                        <p class="text-sm font-light text-gray-400">A web vulnerability scanner tool that analyzes web
-                            targets for security misconfigurations, XSS, and open ports, reporting results in a visual
-                            dashboard.</p>
-                        <div class="flex flex-wrap gap-1.5 mt-2">
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Node.js</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Express</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Socket.io</span>
-                        </div>
-                    </div>
-                    <div class="flex gap-3 mt-4">
-                        <a href="https://github.com/julesr0y" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">Code
-                                Source</button>
-                        </a>
-                        <a href="#" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Live
-                                Demo</button>
+    <body class="text-white bg-main-color font-Satoshi min-h-screen py-10 px-4 flex justify-center">
+        <div class="max-w-6xl w-full">
+            <div>
+                <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-10 pb-6 border-b border-border-color">
+                    <div class="flex items-center gap-4">
+                        <a href="/" aria-label="Back to home">
+                            <button class="custom-btn text-sm max-h-[40px] shadow-custom shadow-third-color active:shadow-none active:translate-x-[3px] active:translate-y-[3px] text-gray-200 px-4 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded-lg flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                                <span>Back to Home</span>
+                            </button>
                         </a>
                     </div>
-                </article>
+                    <div>
+                        <h1 class="text-3xl font-bold font-CabinetGrotesk tracking-tight text-white">Projects</h1>
+                        <p class="text-sm font-light text-gray-500 mt-1">A selection of my recent works and experiments</p>
+                    </div>
+                </header>
 
-                <!-- Project 2 -->
-                <article
-                    class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold">Novashell</h2>
-                            <span
-                                class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Systems</span>
+                <main class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-lg font-bold">PixelMed</h2>
+                                <span class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Software</span>
+                            </div>
+                            <p class="text-sm font-light">Cross-platform software for analyzing medical images (.png & .dcm) using image processing algorithms (CLAHE, Watershed, etc.).</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Python</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">PyQt6</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Oracle Cloud</span>
+                            </div>
                         </div>
-                        <p class="text-sm font-light text-gray-400">A custom prompt wrapper for terminal development
-                            setups providing customized command autocompletions, history bookmarks, and git status
-                            wrappers.</p>
-                        <div class="flex flex-wrap gap-1.5 mt-2">
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">C/C++</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Bash</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Linux</span>
+                        <div class="flex gap-3 mt-4">
+                            <a href="https://github.com/julesr0y/pixelmed" target="_blank" class="flex-1">
+                                <button class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">GitHub</button>
+                            </a>
                         </div>
-                    </div>
-                    <div class="flex gap-3 mt-4">
-                        <a href="https://github.com/julesr0y" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">Code
-                                Source</button>
-                        </a>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 3 -->
-                <article
-                    class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold">Cryptosync</h2>
-                            <span
-                                class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Web
-                                App</span>
+                    <article class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-lg font-bold">PitLane Insider</h2>
+                                <span class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Web App</span>
+                            </div>
+                            <p class="text-sm font-light">A platform that allows access to a wide variety of historical data concerning the Formula 1 world championship.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">JS / Node.js</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">TailwindCSS</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Linux</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Data scraping</span>
+                            </div>
                         </div>
-                        <p class="text-sm font-light text-gray-400">Real-time cryptocurrency monitoring dashboard
-                            powered by WebSocket streams. Visualizes changes using interactive and responsive Chart.js
-                            widgets.</p>
-                        <div class="flex flex-wrap gap-1.5 mt-2">
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">JavaScript</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">WebSockets</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Chart.js</span>
+                        <div class="flex gap-3 mt-4">
+                            <a href="https://github.com/julesr0y/pitlaneinsider" target="_blank" class="flex-1">
+                                <button class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">GitHub</button>
+                            </a>
+                            <a href="https://pitlaneinsider.alwaysdata.net/" target="_blank" class="flex-1">
+                                <button class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Try</button>
+                            </a>
                         </div>
-                    </div>
-                    <div class="flex gap-3 mt-4">
-                        <a href="https://github.com/julesr0y" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">Code
-                                Source</button>
-                        </a>
-                        <a href="#" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Live
-                                Demo</button>
-                        </a>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 4 -->
-                <article
-                    class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold">TaskFlux</h2>
-                            <span
-                                class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Web
-                                Tool</span>
+                    <article class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-lg font-bold">FollowComp</h2>
+                                <span class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Chrome Extension</span>
+                            </div>
+                            <p class="text-sm font-light">A Chrome extension that can be used to view the users you follow that don't follow you back.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">JS</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Data scraping</span>
+                            </div>
                         </div>
-                        <p class="text-sm font-light text-gray-400">A simple, elegant Kanban project management board
-                            featuring offline capabilities via localStorage, tag filtering, and drag-and-drop mechanics.
-                        </p>
-                        <div class="flex flex-wrap gap-1.5 mt-2">
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">HTML/CSS</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">TailwindCSS</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">JavaScript</span>
+                        <div class="flex gap-3 mt-4">
+                            <a href="https://github.com/julesr0y/followcomp" target="_blank" class="flex-1">
+                                <button class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">GitHub</button>
+                            </a>
+                            <a href="https://chromewebstore.google.com/detail/followcomp/dboemglicjcnfojjnijfaochbpopadjg" target="_blank" class="flex-1">
+                                <button class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Try</button>
+                            </a>
                         </div>
-                    </div>
-                    <div class="flex gap-3 mt-4">
-                        <a href="https://github.com/julesr0y" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">Code
-                                Source</button>
-                        </a>
-                        <a href="#" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Live
-                                Demo</button>
-                        </a>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 5 -->
-                <article
-                    class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold">SageMath Crypto Helper</h2>
-                            <span
-                                class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Research</span>
+                    <article class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-lg font-bold">VAL Project</h2>
+                                <span class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Simulation</span>
+                            </div>
+                            <p class="text-sm font-light">This project is a simulation of the Lille metro, with C++ and the SFML library. Carried out in group as part of an end-of-semester project.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">C++</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">CMake</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">SFML</span>
+                            </div>
                         </div>
-                        <p class="text-sm font-light text-gray-400">Script collection and tools designed to analyze
-                            cryptographic systems (RSA key generation vulnerabilities, LLL lattice attacks,
-                            Diffie-Hellman solvers).</p>
-                        <div class="flex flex-wrap gap-1.5 mt-2">
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Python</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">SageMath</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Cryptography</span>
+                        <div class="flex gap-3 mt-4">
+                            <a href="https://github.com/julesr0y/projet_val" target="_blank" class="flex-1">
+                                <button class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">GitHub</button>
+                            </a>
                         </div>
-                    </div>
-                    <div class="flex gap-3 mt-4">
-                        <a href="https://github.com/julesr0y" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">Code
-                                Source</button>
-                        </a>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 6 -->
-                <article
-                    class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold">Sentinel API</h2>
-                            <span
-                                class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Library</span>
+                    <article class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-lg font-bold">Dunetaler</h2>
+                                <span class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Game</span>
+                            </div>
+                            <p class="text-sm font-light">A video game inspired by the game Undertale (by Toby Fox). Made in group as part of the project closing the year of CIR1 at ISEN Lille</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">PHP</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">JS</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">MySQL</span>
+                            </div>
                         </div>
-                        <p class="text-sm font-light text-gray-400">A lightweight middleware for Express designed to
-                            automatically filter query parameters and JSON payloads against standard injection and
-                            scripting patterns.</p>
-                        <div class="flex flex-wrap gap-1.5 mt-2">
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Node.js</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">Express</span>
-                            <span
-                                class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">npm</span>
+                        <div class="flex gap-3 mt-4">
+                            <a href="https://github.com/julesr0y/Dunetaler" target="_blank" class="flex-1">
+                                <button class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">GitHub</button>
+                            </a>
+                            <a href="https://dunetaler.alwaysdata.net/php/inscription.php" target="_blank" class="flex-1">
+                                <button class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Try</button>
+                            </a>
                         </div>
-                    </div>
-                    <div class="flex gap-3 mt-4">
-                        <a href="https://github.com/julesr0y" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">Code
-                                Source</button>
-                        </a>
-                        <a href="#" target="_blank" class="flex-1">
-                            <button
-                                class="w-full text-xs py-2 border border-border-color hover:border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-main-color cursor-pointer rounded flex items-center justify-center gap-2">Live
-                                Demo</button>
-                        </a>
-                    </div>
-                </article>
-            </main>
+                    </article>
+
+                    <article class="card bg-second-color p-5 rounded-lg border border-border-color hover:border-third-color transition duration-75 ease-in-out flex flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-lg font-bold">F1 Circuits SVG</h2>
+                                <span class="text-[10px] text-third-color bg-third-color/10 px-2 py-0.5 rounded border border-third-color/20 font-bold">Open Source</span>
+                            </div>
+                            <p class="text-sm font-light">All Formula 1 circuit layouts and their evolutions from 1950 to nowadays. A project outside my usual area of ​​expertise, but one that allowed me to make my first foray into the world of open-source projects by contributing to the <a href="https://github.com/f1db/f1db" target="_blank" class="underline">f1db</a> repository.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">SVG</span>
+                                <span class="text-xs text-gray-400 bg-main-color border border-border-color px-2 py-0.5 rounded">GitHub</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 mt-4">
+                            <a href="https://github.com/julesr0y/f1-circuits-svg" target="_blank" class="flex-1">
+                                <button class="w-full text-xs shadow-custom shadow-third-color active:shadow-none active:translate-x-[2px] active:translate-y-[2px] text-gray-200 py-2 border border-third-color hover:text-third-color transition-colors duration-100 ease-in-out bg-second-color cursor-pointer rounded flex items-center justify-center gap-2">GitHub</button>
+                            </a>
+                        </div>
+                    </article>
+                </main>
+            </div>
         </div>
-    </div>
-
-    <!-- Script d'animation des cartes -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.style.transform = 'translateY(0)';
-                    card.style.opacity = '1';
-                }, 100 * index);
-            });
-        });
-    </script>
-</body>
-
+        <script src="/js/scripts.js"></script>
+    </body>
 </html>
