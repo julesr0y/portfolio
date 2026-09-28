@@ -11,17 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Three.js and Vanta.js
 document.addEventListener('DOMContentLoaded', () => {
-    VANTA.NET({
-        el: '#intro-card',
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: '#e63946',
-        backgroundColor: '#171717',
-        points: 20.0,
-    });
+    const introCard = document.querySelector('#intro-card');
+    if (introCard) {
+        VANTA.NET({
+            el: '#intro-card',
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: '#e63946',
+            backgroundColor: '#171717',
+            points: 20.0,
+        });
+    }
 });
