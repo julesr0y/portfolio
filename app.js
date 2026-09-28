@@ -1,9 +1,11 @@
-const http = require('http');
 const express = require('express');
 const path = require('path');
 const app = express();
 const helmet = require("helmet");
+const links = require('./config/links.json');
 
+// settings for view engine (ejs)
+app.locals.links = links; // making links available in the views
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
@@ -20,18 +22,24 @@ app.use(helmet.contentSecurityPolicy({
         frameSrc: ["'self'", "https://www.google.com", "https://www.google.fr", "https://maps.google.com"],
         childSrc: ["'self'", "https://www.google.com", "https://www.google.fr", "https://maps.google.com"],
     }
-})); // Middleware for Content Security Policy (CSP)
+})); // middleware for Content Security Policy (CSP)
 
-// Home route.
+// home route
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-// Projects route.
+// projects route
 app.get('/projects', (req, res) => {
     res.render('projects');
 });
 
+// 404 route
+app.use((req, res, next) => {
+    res.status(404).render('404');
+});
+
+// error handling
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');

@@ -3,7 +3,7 @@
 Jules ROY is an IT engineering student at JUNIA ISEN Lille based in France.
 
 ## Profile Details
-- **Email**: julesroydev@gmail.com
+- **Email**: julesr0y.tech@gmail.com
 - **GitHub**: https://github.com/julesr0y
 - **LinkedIn**: https://www.linkedin.com/in/julesr0y/
 - **Instagram**: https://instagram.com/julesr0y/
@@ -16,5 +16,5 @@ Jules ROY is an IT engineering student at JUNIA ISEN Lille based in France.
 - Spoken Languages: French (Native), English (Fluent)
 
 ## Education & Experience
-- Currently enrolled in the CIR program at JUNIA ISEN Lille, France.
+- Currently enrolled in Information Systems specialization (4th year) at JUNIA ISEN Lille, France.
 - Actively seeking a 3-month internship abroad starting in May 2027.

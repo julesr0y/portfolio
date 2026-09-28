@@ -1,0 +1,36 @@
+{
+  "siteUrl": "https://julesr0y.xyz",
+  "email": "julesr0y.tech@gmail.com",
+  "socials": {
+    "github": "https://github.com/julesr0y",
+    "linkedin": "https://www.linkedin.com/in/julesr0y",
+    "instagram": "https://instagram.com/julesr0y"
+  },
+  "education": {
+    "junia": "https://www.junia.com/en/programmes/isen-program/"
+  },
+  "projects": {
+    "pixelmed": {
+      "github": "https://github.com/julesr0y/pixelmed"
+    },
+    "pitlaneinsider": {
+      "github": "https://github.com/julesr0y/pitlaneinsider",
+      "demo": "https://pitlaneinsider.alwaysdata.net/"
+    },
+    "followcomp": {
+      "github": "https://github.com/julesr0y/followcomp",
+      "demo": "https://chromewebstore.google.com/detail/followcomp/dboemglicjcnfojjnijfaochbpopadjg"
+    },
+    "val": {
+      "github": "https://github.com/julesr0y/projet_val"
+    },
+    "dunetaler": {
+      "github": "https://github.com/julesr0y/Dunetaler",
+      "demo": "https://dunetaler.alwaysdata.net/php/inscription.php"
+    },
+    "f1CircuitsSvg": {
+      "github": "https://github.com/julesr0y/f1-circuits-svg",
+      "f1db": "https://github.com/f1db/f1db"
+    }
+  }
+}

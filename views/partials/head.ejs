@@ -7,19 +7,19 @@
 
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://julesr0y.xyz/" />
+<meta property="og:url" content="<%= links.siteUrl %>/" />
 <meta property="og:title" content="Jules ROY" />
 <meta property="og:description" content="Explore the portfolio of Jules ROY, engineering student. View skills, experience, and projects." />
-<meta property="og:image" content="https://julesr0y.xyz/icons/open-graph-icon-1200x630.png" />
+<meta property="og:image" content="<%= links.siteUrl %>/icons/open-graph-icon-1200x630.png" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:url" content="https://julesr0y.xyz/" />
+<meta name="twitter:url" content="<%= links.siteUrl %>/" />
 <meta name="twitter:title" content="Jules ROY" />
 <meta name="twitter:description" content="Explore the portfolio of Jules ROY, engineering student. View skills, experience, and projects." />
-<meta name="twitter:image" content="https://julesr0y.xyz/icons/twitter-icon-800x418.png" />
+<meta name="twitter:image" content="<%= links.siteUrl %>/icons/twitter-icon-800x418.png" />
 
-<link rel="canonical" href="https://julesr0y.xyz/" />
+<link rel="canonical" href="<%= links.siteUrl %>/" />
 <link rel="icon" href="/favicon.ico?v=M44lzPylqQ" />
 <link rel="mask-icon" href="/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000" />
 <link rel="stylesheet" href="/stylesheets/style.css" />
@@ -28,6 +28,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
 
 <style>
+    /* 
+        animations for cards
+    */
     .card {
         transition:
             transform 0.4s,
